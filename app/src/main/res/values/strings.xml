@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MetroExplorer</string>
+    <string name="nearby_button">Nearby Metro</string>
+    <string name="selectstation_button">Select Station</string>
+    <string name="favorites_button">Favorrites</string>
+    <string name="Search">Search</string>
+</resources>
