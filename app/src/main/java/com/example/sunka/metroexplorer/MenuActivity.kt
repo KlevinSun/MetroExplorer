@@ -11,8 +11,7 @@ import android.util.Log
 import com.example.sunka.metroexplorer.model.Metro
 
 import kotlinx.android.synthetic.main.activity_menu.*
-import org.jetbrains.anko.activityUiThread
-import org.jetbrains.anko.doAsync
+
 
 class MenuActivity : AppCompatActivity() {
     lateinit var wmataStationSearchManager: WmataStationSearchManager
@@ -34,26 +33,6 @@ class MenuActivity : AppCompatActivity() {
         requestPermissionIfNecessary()
     }
 
-   /* fun loadMetroStationData(){
-        doAsync {
-
-            wmataStationSearchManager = WmataStationSearchManager(this@MenuActivity, metroData)
-
-            wmataStationSearchManager.search()
-
-            if (metroData.isNotEmpty()) {
-
-                activityUiThread {
-                    val intent = Intent(this@MenuActivity, MetroStationActivity::class.java)
-                    intent.putExtra("metroData", metroData)
-                    startActivity(intent)
-                }
-                Log.d("test", metroData.count().toString())
-            }else{
-                Log.e("test", "error")
-            }
-        }
-    }*/
 
     fun requestPermissionIfNecessary(){
         val selfPermission = ContextCompat.checkSelfPermission(this,
