@@ -7,12 +7,12 @@
     android:orientation="vertical"
     tools:context="com.example.sunka.metroexplorer.MetroStationActivity">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/metro_toolbar"
+    <EditText
+        android:id="@+id/searchEditView"
+        android:hint="@string/hint"
         android:layout_width="match_parent"
-        android:layout_height="?android:attr/actionBarSize"
-        android:background="@color/colorPrimary"
-        />
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"/>
 
 
     <ProgressBar
@@ -25,8 +25,12 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/MetroStationList"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/metro_toolbar"
+        android:layout_height="0dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/searchEditView"
+        android:layout_margin="@dimen/cardview_default_elevation"
         android:background="@color/light_gray"/>
 
 </RelativeLayout>

@@ -4,4 +4,5 @@
     <string name="selectstation_button">Select Station</string>
     <string name="favorites_button">Favorrites</string>
     <string name="Search">Search</string>
+    <string name="hint">Search</string>
 </resources>
